@@ -1,3 +1,5 @@
+#!/bin/bash
+
 mvn clean package -Dmaven.test.skip=true
 
 docker login -u north-developer -p Calong@2015 registry.fit2cloud.com
