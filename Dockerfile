@@ -1,6 +1,6 @@
-FROM registry.fit2cloud.com/north/fabric8-java-alpine-openjdk8-jre-maven3.5:master
-MAINTAINER FIT2CLOUD <support@fit2cloud.com>
-
+#FROM registry.fit2cloud.com/north/fabric8-java-alpine-openjdk8-jre-maven3.5:master
+#MAINTAINER FIT2CLOUD <support@fit2cloud.com>
+FROM java:8
 RUN mkdir -p /opt/apps
 
 ADD target/demo-makai-1.0.jar /opt/apps
