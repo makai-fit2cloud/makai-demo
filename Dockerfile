@@ -11,4 +11,5 @@ ENV AB_OFF=true
 
 ENV JAVA_OPTIONS=-Dfile.encoding=utf-8
 
-CMD ["/deployments/run-java.sh"]
+#CMD ["/deployments/run-java.sh"]
+ENTRYPOINT ["java","-Dfile.encoding=utf-8","-jar","/opt/apps/demo-makai-1.0.jar"]
